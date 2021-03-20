@@ -1,42 +1,42 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./styles/NavTabs.css";
 
-function NavTabs(props) {
+function NavTabs() {
+  const location = useLocation();
+
   return (
     <nav className="navbar navbar-expand-md navbar-dark">
       <ul className="navbar-nav">
-        <li className="nav-item">
-          <a
-            href="#home"
-            onClick={() => props.handlePageChange("Home")}
+        <li class="nav-item">
+          <Link
+            to="/"
             className={
-              props.currentPage === "Home" ? "nav-link active" : "nav-link"
+              location.pathname === "/" ? "nav-link active" : "nav-link"
             }
           >
             Home
-          </a>
+          </Link>
         </li>
-        <li className="nav-item">
-          <a
-            href="#portfolio"
-            onClick={() => props.handlePageChange("Portfolio")}
+        <li class="nav-item">
+          <Link
+            to="/portfolio"
             className={
-              props.currentPage === "Portfolio" ? "nav-link active" : "nav-link"
+              location.pathname === "/portfolio" ? "nav-link active" : "nav-link"
             }
           >
             Portfolio
-          </a>
+          </Link>
         </li>
-        <li className="nav-item">
-          <a
-            href="#contact"
-            onClick={() => props.handlePageChange("Contact")}
+        <li class="nav-item">
+          <Link
+            to="/contact"
             className={
-              props.currentPage === "Contact" ? "nav-link active" : "nav-link"
+              location.pathname === "/contact" ? "nav-link active" : "nav-link"
             }
           >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
