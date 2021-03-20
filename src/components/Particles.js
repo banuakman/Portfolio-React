@@ -64,7 +64,7 @@ class Background extends Component {
             detectsOn: "canvas",
             events: {
               onClick: {
-                enable: false,
+                enable: true,
                 mode: "push",
               },
               onDiv: {
@@ -100,7 +100,7 @@ class Background extends Component {
                 color: {
                   value: "#ff0000",
                 },
-                size: 40,
+                size: 30,
               },
               connect: {
                 distance: 80,
@@ -393,9 +393,9 @@ class Background extends Component {
             size: {
               random: {
                 enable: true,
-                minimumValue: 100,
+                minimumValue: 80,
               },
-              value: 160,
+              value: 120,
               animation: {
                 count: 0,
                 enable: false,
