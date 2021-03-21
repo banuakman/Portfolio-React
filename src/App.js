@@ -11,9 +11,9 @@ const App = () => (
   <Router>
     <Wrapper>
       <NavTabs/>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/portfolio" component={Portfolio} />
-      <Route path="/contact" component={Contact} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/portfolio" component={Portfolio} />
+        <Route exact path="/contact" component={Contact} />
       <Footer/>
     </Wrapper>
   </Router>
