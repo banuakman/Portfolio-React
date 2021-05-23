@@ -12,8 +12,9 @@ function ProjectCards() {
               <Card>
                 <div className="card-title">{card.title}</div>
                 <Image title={card.title} src={card.image} />
-                <div className="card-body">{card.github}</div>
-                <div className="card-body">{card.deployed}</div>
+                <div className="card-body">
+                  {card.github} | {card.deployed}
+                </div>
               </Card>
             </div>
           ))}
@@ -99,40 +100,136 @@ function Image({ title, src }) {
 
 const projects = [
   {
-    title: "⚡️ Project 1",
-    github: "GitHub Link",
-    deployed: "Deployment Link",
-    image: "https://6jlvz1j5q3.csb.app/undraw_collection.svg",
+    title: "Focal Local",
+    github: (
+      <a
+        href="https://github.com/banuakman/focal-local"
+        target="_blank"
+        style={{ color: "#1A1A1A" }}
+      >
+        GitHub
+      </a>
+    ),
+    deployed: (
+      <a
+        href="https://focal-local.herokuapp.com/"
+        target="_blank"
+        style={{ color: "#1A1A1A" }}
+      >
+        Deployment
+      </a>
+    ),
+    image: "/images/focal-local.png",
   },
   {
-    title: "⚡️ Project 2",
-    github: "GitHub Link",
-    deployed: "Deployment Link",
-    image: "https://6jlvz1j5q3.csb.app/undraw_collection.svg",
+    title: "Wine-Log",
+    github: (
+      <a
+        href="https://github.com/banuakman/wine-log"
+        target="_blank"
+        style={{ color: "#1A1A1A" }}
+      >
+        GitHub
+      </a>
+    ),
+    deployed: (
+      <a
+        href="https://project2-women-power.herokuapp.com/"
+        target="_blank"
+        style={{ color: "#1A1A1A" }}
+      >
+        Deployment
+      </a>
+    ),
+    image: "/images/wine-log.png",
   },
   {
-    title: "⚡️ Project 3",
-    github: "GitHub Link",
-    deployed: "Deployment Link",
-    image: "https://6jlvz1j5q3.csb.app/undraw_collection.svg",
+    title: "What's for Dinner?",
+    github: (
+      <a
+        href="https://github.com/banuakman/Whats-For-Dinner"
+        target="_blank"
+        style={{ color: "#1A1A1A" }}
+      >
+        GitHub
+      </a>
+    ),
+    deployed: (
+      <a
+        href="https://benrgross.github.io/Whats-For-Dinner/"
+        target="_blank"
+        style={{ color: "#1A1A1A" }}
+      >
+        Deployment
+      </a>
+    ),
+    image: "/images/whats_for_dinner.png",
   },
   {
-    title: "⚡️ Project 4",
-    github: "GitHub Link",
-    deployed: "Deployment Link",
-    image: "https://6jlvz1j5q3.csb.app/undraw_collection.svg",
+    title: "Eat-Da-Burger",
+    github: (
+      <a
+        href="https://github.com/banuakman/Eat-Da-Burger"
+        target="_blank"
+        style={{ color: "#1A1A1A" }}
+      >
+        GitHub
+      </a>
+    ),
+    deployed: (
+      <a
+        href="https://nextburger.herokuapp.com/"
+        target="_blank"
+        style={{ color: "#1A1A1A" }}
+      >
+        Deployment
+      </a>
+    ),
+    image: "/images/eat-da-burger.png",
   },
   {
-    title: "⚡️ Project 5",
-    github: "GitHub Link",
-    deployed: "Deployment Link",
-    image: "https://6jlvz1j5q3.csb.app/undraw_collection.svg",
+    title: "Budget Tracker",
+    github: (
+      <a
+        href="https://github.com/banuakman/BudgetTracker"
+        target="_blank"
+        style={{ color: "#1A1A1A" }}
+      >
+        github
+      </a>
+    ),
+    deployed: (
+      <a
+        href="https://onoffbudgettracker.herokuapp.com/"
+        target="_blank"
+        style={{ color: "#1A1A1A" }}
+      >
+        Deployment
+      </a>
+    ),
+    image: "/images/budget-tracker.png",
   },
   {
-    title: "⚡️ Project 6",
-    github: "GitHub Link",
-    deployed: "Deployment Link",
-    image: "https://6jlvz1j5q3.csb.app/undraw_collection.svg",
+    title: "Fitness Tracker",
+    github: (
+      <a
+        href="https://github.com/banuakman/FitnessTracker"
+        target="_blank"
+        style={{ color: "#1A1A1A" }}
+      >
+        github
+      </a>
+    ),
+    deployed: (
+      <a
+        href="https://newfitnesstracker.herokuapp.com/"
+        target="_blank"
+        style={{ color: "#1A1A1A" }}
+      >
+        Deployment
+      </a>
+    ),
+    image: "/images/fitness-tracker.png",
   },
 ];
 
