@@ -1,10 +1,11 @@
 import React from "react";
 import ProjectCards from "../Card";
+import "../styles/Portfolio.css";
 
 const Portfolio = () => (
-  <div>
+  <div className="portfolio">
     <h1>Portfolio</h1>
-    <div>
+    <div className="projects">
       <ProjectCards />
     </div>
   </div>

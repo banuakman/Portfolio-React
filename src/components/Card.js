@@ -195,7 +195,7 @@ const projects = [
         target="_blank"
         style={{ color: "#1A1A1A" }}
       >
-        github
+        GitHub
       </a>
     ),
     deployed: (
@@ -217,7 +217,7 @@ const projects = [
         target="_blank"
         style={{ color: "#1A1A1A" }}
       >
-        github
+        GitHub
       </a>
     ),
     deployed: (
