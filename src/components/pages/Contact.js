@@ -2,7 +2,6 @@ import React from "react";
 import Background from "../Particles";
 import "../styles/Contact.css";
 
-
 const dStyle = {
   color: "#E8C3B9",
 };
@@ -26,9 +25,18 @@ const Contact = () => (
       </p>
       <p className="lead">
         <a
-          href="https://www.linkedin.com/in/banuakman/" style={{ color: "#1A1A1A" }}
+          href="https://www.linkedin.com/in/banuakman/"
+          style={{ color: "#1A1A1A" }}
         >
           linkedin.com/in/banuakman/
+        </a>
+      </p>
+      <p className="lead">
+        <a
+          href="https://drive.google.com/file/d/1h6sCbIieCKgOM4aWu6RKduQqGQkSD0lV/view?usp=sharing"
+          style={{ color: "#1A1A1A" }}
+        >
+          RESUME (pdf)
         </a>
       </p>
     </div>
