@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+Deployed @ https://banuakman.herokuapp.com/
 
 [![Banu's github stats](https://github-readme-stats.vercel.app/api?username=banuakman)](https://github.com/banuakman/github-readme-stats)
 
